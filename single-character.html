@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raiden Shogun</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" href="Characters/Raiden-Shogun/icon.png">
+</head>
+<body class="bg-light pt-5">
+    
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-light fixed-top border-bottom small blur-filter">
+    <div class="container">
+        <a href="index.html" class="navbar-brand">
+            <img src="img/brand-nobg.png" alt="">
+        </a>
+        <button
+            type="button"
+            class="navbar-toggler border-0"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-content"
+            aria-controls="navbar-content"
+            aria-expanded="false"
+            aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-3" id="navbar-content">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item me-3">
+                    <a href="index.html" class="nav-link" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a href="about-us.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a href="archive.html" class="nav-link active">Archive</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a href="#" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a href="#" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <form class="me-1 d-mb-block gap-2 mb-2 mb-md-0" role="search">
+                <div class="input-group mb-lg-0 mb-2">
+                    <input type="search" class="form-control form-control-sm" placeholder="Search for...">
+                    <button type="submit" class="btn btn-sm btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+            <div class=" me-1 d-grid d-md-block gap-2 mb-2 mb-md-0">
+                <a href="#" class="btn btn-sm btn-danger align-items-center d-inline-flex justify-content-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill me-2" viewBox="0 0 16 16">
+                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                    </svg>
+                    Sign-up now
+                </a>
+                <a href="#" class="btn btn-sm btn-success align-items-center d-inline-flex justify-content-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right me-2" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                        <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                    </svg>
+                    Login 
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</nav>
+<!-- Navbar -->
+
+
+<!-- Character Header-->
+<header class="single-character header py-5 border-bottom bg-dark text-white">
+    <div class="container">
+        <div class="row gx-md-5 align-items-center">
+            <div class="col-md-6 order-md-0 order-2">
+                <div class="breadcrumb-holder">
+                    <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '&rang;'";>
+                        <ol class="breadcrumb text-bg-light border d-inline-flex align-items-center px-3 py-1 rounded-pill">
+                            <li class="breadcrumb-item">
+                                <a href="index.html" class="small text-decoration-none">Home</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="index.html" class="small text-decoration-none">Archive</a>
+                            </li>
+                            <li class="breadcrumb-item active small" aria-current="page">
+                               Raiden Shogun
+                            </li>
+                        </ol>
+                    </nav>    
+                </div>
+                <div class="single-character-content-holder pe-md-5 mb-3">
+                    <h1 class="fw normal fs-3">Raiden Shogun</h1>
+                    <h2 class="fs-6 small fw-light" style="color: rgb(175, 174, 174);">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti consequatur vel tempore perspiciatis, ducimus ipsam numquam atque eaque unde magnam recusandae illum voluptates distinctio officiis dolorem soluta, qui non vitae.
+                    </h2>
+                    <hr>
+                    
+                    <div class="archieve-data mb-2 small">
+                        <p class="mb-1 d-flex align-items-center">
+                            Tutorial Build Video
+                        </p>
+                        <p class="mb-1 d-flex align-items-center">
+                            Damage Test Video
+                        </p>
+                        <p class="mb-1 d-flex align-items-center">
+                            Free Access
+                        </p>
+                        <p class="mb-1 d-flex align-items-center">
+                            Best Character Build
+                        </p>
+                        <p class="mb-1 d-flex align-items-center">
+                            Best Artifact Build
+                        </p>
+                        <p class="mb-1 d-flex align-items-center">
+                            <strong>Rp. 4,144,442/</strong>
+                            <span>
+                                <del>Rp. 44,444,442</del>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="archive-button mb-3">
+                        <div class="d-grid d-md-block gap-2">
+                            <a href="#" class="btn btn-sm btn-success d-inline-flex align-items-center">
+                                <img class="small-img me-2" src="img/muehe1.jpg" alt="">
+                                Enroll Now
+                            </a>
+                            <a href="#" class="btn btn-sm btn-warning d-inline-flex align-items-center">
+                                <img class="small-img me-2" src="img/muehe1.jpg" alt="">
+                                Request Coupons
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="single-character-image mb-md-0 mb-3">
+                    <iframe class="full-width-video" src="https://www.youtube.com/embed/mvrW4aKwAXw" title="Character Demo - &quot;Raiden Shogun: Judgment of Euthymia&quot; | Genshin Impact" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Single Character Header-->
+
+
+<!-- Character Description -->
+<section class="single-character-description py-5 border-bottom">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="character-description-image mb-md-0 mb-3">
+                    <img class="rounded img-fluid full-width" src="Characters/Raiden-Shogun/raiden-shogun.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="character-description-content-small-ps-md-5">
+                    <h3 class="fs-4">Character Stats</h3>
+                    <hr class="w-75">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error expedita nulla neque suscipit a ratione vitae assumenda ab alias quasi officia maxime voluptatibus doloribus dolorem corporis similique, quam illo labore.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error expedita nulla neque suscipit a ratione vitae assumenda ab alias quasi officia maxime voluptatibus doloribus dolorem corporis similique, quam illo labore.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Character Description -->
+
+
+<!-- Character Weapon -->
+<section class="character-content py-5 border-bottom bg-dark text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 mb-md-0 mb-3 d-md-flex justify-content-center text-center">
+                <div class="character-contents small pe-md-5">
+                    <h3 class="fs-3">Best Weapon</h3>
+                    <hr class="w-100">
+                    <div class="list-group fw-bold" id="list-tab" role="tablist">
+                        <a
+                            class="list-group-item list-group-item-dark list-group-item-action active"
+                            id="list-home-list"
+                            data-bs-toggle="list"
+                            href="#list-home"
+                            role="tab"
+                            aria-controls="list-home">
+                            Engulfing Lightning
+                        </a>
+                        <a
+                            class="list-group-item list-group-item-dark list-group-item-action"
+                            id="list-profile-list"
+                            data-bs-toggle="list"
+                            href="#list-profile"
+                            role="tab"
+                            aria-controls="list-profile">
+                            The Catch
+                        </a>
+                        <a
+                            class="list-group-item list-group-item-dark list-group-item-action"
+                            id="list-messages-list"
+                            data-bs-toggle="list"
+                            href="#list-messages"
+                            role="tab"
+                            aria-controls="list-messages">
+                            Messages
+                        </a>
+                        <a
+                            class="list-group-item list-group-item-dark list-group-item-action"
+                            id="list-settings-list"
+                            data-bs-toggle="list"
+                            href="#list-settings"
+                            role="tab"
+                            aria-controls="list-settings">
+                            Settings
+                        </a>
+                    </div>
+                </div>
+            </div>
+                <div class="col-md-8">
+                        <div class="tab-content" id="nav-tabContent">
+                            <!-- ENGULFING LIGHTNING -->
+                            <div
+                                class="tab-pane fade show active"
+                                id="list-home"
+                                role="tabpanel"
+                                aria-labelledby="list-home-list">
+                                <div class="weapon-description d-inline-block me-4 w-100 w-md-25">
+                                    <h5 class="fs-3">Engulfing Ligthning</h5>
+                                    <div class="star mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                          </svg>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                          </svg>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                          </svg>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                          </svg>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                          </svg>
+                                    </div>
+                                    <h5 class="fs-5">Base ATK</h5>
+                                    <p class="text-desc">(Lv. 1 - 90) 46 - 608</p>
+                                    <h5 class="fs-5">2nd Stat Type</h5>
+                                    <p class="text-desc">Energy Recharge</p>
+                                    <h5 class="fs-5">2nd Stat</h5>
+                                    <p class="text-desc"> (Lv. 1-90) 12% - 55.1%</p>
+                                    <h6 class="fs-5">Refinement</h6>
+                                    <div class="list-group list-group-horizontal mt-3 mb-3 text-center w-75">
+                                        <a
+                                            class="list-group-item list-group-item-dark list-group-item-action active"
+                                            id="list-refine-list"
+                                            data-bs-toggle="list"
+                                            href="#refine-el-1"
+                                            role="tab"
+                                            aria-controls="list-refine">
+                                            1
+                                        </a>
+                                        <a
+                                            class="list-group-item list-group-item-dark list-group-item-action"
+                                            id="list-home-list"
+                                            data-bs-toggle="list"
+                                            href="#refine-el-2"
+                                            role="tab"
+                                            aria-controls="list-refine">
+                                            2
+                                        </a>
+                                        <a
+                                            class="list-group-item list-group-item-dark list-group-item-action"
+                                            id="list-home-list"
+                                            data-bs-toggle="list"
+                                            href="#refine-el-3"
+                                            role="tab"
+                                            aria-controls="list-refine">
+                                            3
+                                        </a>
+                                        <a
+                                            class="list-group-item list-group-item-dark list-group-item-action"
+                                            id="list-home-list"
+                                            data-bs-toggle="list"
+                                            href="#refine-el-4"
+                                            role="tab"
+                                            aria-controls="list-refine">
+                                            4
+                                        </a>
+                                        <a
+                                            class="list-group-item list-group-item-dark list-group-item-action"
+                                            id="list-home-list"
+                                            data-bs-toggle="list"
+                                            href="#refine-el-5"
+                                            role="tab"
+                                            aria-controls="list-refine">
+                                            5
+                                        </a>
+                                    </div>
+                                    <h6 class="fs-5">Timeless Dream: Eternal Stove</h6>
+                                    <div class="tab-content" id="refinement-tabContent">
+                                        <div 
+                                            class="tab-pane fade show active"
+                                            id="refine-el-1"
+                                            role="tabpanel"
+                                            aria-labelledby="list-refine-list">
+                                            ATK increased by <strong class="text-warning">28%</strong> of Energy Recharge over the base 100%. You can gain a maximum bonus of <strong class="text-warning">80%</strong> ATK. Gain <strong class="text-warning">30%</strong> Energy Recharge for 12s after using an Elemental Burst.
+                                        </div>
+                                        <div 
+                                            class="tab-pane fade"
+                                            id="refine-el-2"
+                                            role="tabpanel"
+                                            aria-labelledby="list-refine-list">
+                                            ATK increased by <strong class="text-warning">35%</strong> of Energy Recharge over the base 100%. You can gain a maximum bonus of <strong class="text-warning">90%</strong> ATK. Gain <strong class="text-warning">35%</strong> Energy Recharge for 12s after using an Elemental Burst.
+                                        </div>
+                                        <div 
+                                            class="tab-pane fade"
+                                            id="refine-el-3"
+                                            role="tabpanel"
+                                            aria-labelledby="list-refine-list">
+                                            ATK increased by <strong class="text-warning">42%</strong> of Energy Recharge over the base 100%. You can gain a maximum bonus of <strong class="text-warning">100%</strong> ATK. Gain <strong class="text-warning">40%</strong> Energy Recharge for 12s after using an Elemental Burst.
+                                        </div>
+                                        <div 
+                                            class="tab-pane fade"
+                                            id="refine-el-4"
+                                            role="tabpanel"
+                                            aria-labelledby="list-refine-list">
+                                            ATK increased by <strong class="text-warning">49%</strong> of Energy Recharge over the base 100%. You can gain a maximum bonus of <strong class="text-warning">110%</strong> ATK. Gain <strong class="text-warning">45%</strong> Energy Recharge for 12s after using an Elemental Burst.
+                                        </div>
+                                        <div 
+                                            class="tab-pane fade"
+                                            id="refine-el-5"
+                                            role="tabpanel"
+                                            aria-labelledby="list-refine-list">
+                                            ATK increased by <strong class="text-warning">56%</strong> of Energy Recharge over the base 100%. You can gain a maximum bonus of <strong class="text-warning">120%</strong> ATK. Gain <strong class="text-warning">50%</strong> Energy Recharge for 12s after using an Elemental Burst.
+                                        </div>
+                                    </div>
+                                </div>    
+                                <div class="weapon-content-image d-inline-block align-top">
+                                    <img class="img-fluid" src="Characters/Raiden-Shogun/elgulfing_auto_x2-removebg-preview.png" alt="">
+                                </div>                
+                            </div>
+                            <!-- ENGULFING LIGHTNING -->
+    
+                            <!-- THE CATCH -->
+                            <div
+                                class="tab-pane fade"
+                                id="list-profile"
+                                role="tabpanel"
+                                aria-labelledby="list-profile-list">
+                                <div class="weapon-description d-inline-block me-4 w-100 w-md-25">
+                                    <h5 class="fs-3">The Catch</h5>
+                                    <div class="star mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                          </svg>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                          </svg>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                          </svg>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                          </svg>
+                                    </div>
+                                    <h5 class="fs-5">Base ATK</h5>
+                                    <p class="text-desc">(Lv. 1 - 90) 46 - 608</p>
+                                    <h5 class="fs-5">2nd Stat Type</h5>
+                                    <p class="text-desc">Energy Recharge</p>
+                                    <h5 class="fs-5">2nd Stat</h5>
+                                    <p class="text-desc"> (Lv. 1-90) 12% - 55.1%</p>
+                                    <h5 class="fs-5">Refinement</h5>
+                                    <div class="list-group list-group-horizontal mt-3 mb-3 text-center w-75">
+                                        <a
+                                            class="list-group-item list-group-item-dark list-group-item-action active"
+                                            id="list-refine-list"
+                                            data-bs-toggle="list"
+                                            href="#refine-tc-1"
+                                            role="tab"
+                                            aria-controls="list-refine">
+                                            1
+                                        </a>
+                                        <a
+                                            class="list-group-item list-group-item-dark list-group-item-action"
+                                            id="list-home-list"
+                                            data-bs-toggle="list"
+                                            href="#refine-tc-2"
+                                            role="tab"
+                                            aria-controls="list-refine">
+                                            2
+                                        </a>
+                                        <a
+                                            class="list-group-item list-group-item-dark list-group-item-action"
+                                            id="list-home-list"
+                                            data-bs-toggle="list"
+                                            href="#refine-tc-3"
+                                            role="tab"
+                                            aria-controls="list-refine">
+                                            3
+                                        </a>
+                                        <a
+                                            class="list-group-item list-group-item-dark list-group-item-action"
+                                            id="list-home-list"
+                                            data-bs-toggle="list"
+                                            href="#refine-tc-4"
+                                            role="tab"
+                                            aria-controls="list-refine">
+                                            4
+                                        </a>
+                                        <a
+                                            class="list-group-item list-group-item-dark list-group-item-action"
+                                            id="list-home-list"
+                                            data-bs-toggle="list"
+                                            href="#refine-tc-5"
+                                            role="tab"
+                                            aria-controls="list-refine">
+                                            5
+                                        </a>
+                                    </div>
+                                    <h6>fsafsaf</h6>
+                                    <div class="tab-content" id="refinement-tabContent">
+                                        <div 
+                                            class="tab-pane fade show active"
+                                            id="refine-tc-1"
+                                            role="tabpanel"
+                                            aria-labelledby="list-refine-list">
+                                            ATK increased by <strong class="text-warning">28%</strong> of Energy Recharge over the base 100%. You can gain a maximum bonus of <strong class="text-warning">80%</strong> ATK. Gain <strong class="text-warning">30%</strong> Energy Recharge for 12s after using an Elemental Burst.
+                                        </div>
+                                        <div 
+                                            class="tab-pane fade"
+                                            id="refine-tc-2"
+                                            role="tabpanel"
+                                            aria-labelledby="list-refine-list">
+                                            ATK increased by <strong class="text-warning">35%</strong> of Energy Recharge over the base 100%. You can gain a maximum bonus of <strong class="text-warning">90%</strong> ATK. Gain <strong class="text-warning">35%</strong> Energy Recharge for 12s after using an Elemental Burst.
+                                        </div>
+                                        <div 
+                                            class="tab-pane fade"
+                                            id="refine-tc-3"
+                                            role="tabpanel"
+                                            aria-labelledby="list-refine-list">
+                                            ATK increased by <strong class="text-warning">42%</strong> of Energy Recharge over the base 100%. You can gain a maximum bonus of <strong class="text-warning">100%</strong> ATK. Gain <strong class="text-warning">40%</strong> Energy Recharge for 12s after using an Elemental Burst.
+                                        </div>
+                                        <div 
+                                            class="tab-pane fade"
+                                            id="refine-tc-4"
+                                            role="tabpanel"
+                                            aria-labelledby="list-refine-list">
+                                            ATK increased by <strong class="text-warning">49%</strong> of Energy Recharge over the base 100%. You can gain a maximum bonus of <strong class="text-warning">110%</strong> ATK. Gain <strong class="text-warning">45%</strong> Energy Recharge for 12s after using an Elemental Burst.
+                                        </div>
+                                        <div 
+                                            class="tab-pane fade"
+                                            id="refine-tc-5"
+                                            role="tabpanel"
+                                            aria-labelledby="list-refine-list">
+                                            ATK increased by <strong class="text-warning">56%</strong> of Energy Recharge over the base 100%. You can gain a maximum bonus of <strong class="text-warning">120%</strong> ATK. Gain <strong class="text-warning">50%</strong> Energy Recharge for 12s after using an Elemental Burst.
+                                        </div>
+                                    </div>
+                                </div>    
+                                <div class="weapon-content-image d-inline-block align-top">
+                                    <img class="img-fluid" src="Characters/Raiden-Shogun/the-catch_auto_x2-removebg-preview.png" alt="">
+                                </div>                         
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="list-messages"
+                                role="tabpanel"
+                                aria-labelledby="list-messages-list">
+                                <h5>Messages Content</h5>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident esse, praesentium quod dolorum tempore nesciunt tempora, consectetur in, suscipit corporis recusandae accusantium vitae fugit culpa inventore alias voluptatum eos eligendi!
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="list-settings"
+                                role="tabpanel"
+                                aria-labelledby="list-settings-list">
+                                <h5>Settings Content</h5>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident esse, praesentium quod dolorum tempore nesciunt tempora, consectetur in, suscipit corporis recusandae accusantium vitae fugit culpa inventore alias voluptatum eos eligendi!
+                            </div>
+                        </div>
+                </div>
+        </div>
+    </div>
+</section>
+<!-- Character Content -->
+
+
+
+<!-- Character Artifacts -->
+<section class="character-content py-5 border-bottom">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 order-md-2">
+                <div class="character-content-image mb-md-0 mb-3">
+                    <img class="rounded img-fluid full-width" src="Characters/Raiden-Shogun/emblem1.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="character-contents small pe-md-5">
+                    <h3 class="fs-4">Best Artifact</h3>
+                    <hr class="w-75">
+                    <ul>
+                        <li>
+                            <h4 class="fs-6">Engulfing Lightning</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores perspiciatis mollitia pariatur doloremque voluptatum, ducimus officia consequuntur sed optio, voluptatem amet impedit quisquam placeat blanditiis, ipsum nisi! Animi, necessitatibus incidunt.</p>
+                        </li>
+                        <li>
+                            <h4 class="fs-6">Content One</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores perspiciatis mollitia pariatur doloremque voluptatum, ducimus officia consequuntur sed optio, voluptatem amet impedit quisquam placeat blanditiis, ipsum nisi! Animi, necessitatibus incidunt.</p>
+                        </li>
+                        <li>
+                            <h4 class="fs-6">Content One</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores perspiciatis mollitia pariatur doloremque voluptatum, ducimus officia consequuntur sed optio, voluptatem amet impedit quisquam placeat blanditiis, ipsum nisi! Animi, necessitatibus incidunt.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Character Content -->
+
+
+<!-- My Build -->
+<section class="character-content py-5 border-bottom bg-dark text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-2">
+                <div class="d-md-block d-none build-content-header d-flex justify-content-md-start justify-content-center mb-md-0 mb-3">
+                    <h3 class="fs-3">My Build</h3>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="build-content-image mb-md-0 mb-3 w-md-100 w-80 d-inline-flex">
+                    <img class="img-fluid rounded full-width" src="Characters/Raiden-Shogun/Raiden-Build.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- My Build -->
+
+
+<!-- Subscribe -->
+<section class="subscribe py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="subscribe-heading text-white text-md-end text-center">
+                    <h5 class="fs-4 fw-light m-0 mb-md-0 mb-3">Subscribe for Notification</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <form class="d-flex justify-content-center">
+                    <div class="input-group">
+                        <input type="email" class="form-control form-control-sm" placeholder="Email">
+                        <button type="submit" class="btn btn-sm btn-success d-inline-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-check-fill me-2" viewBox="0 0 16 16">
+                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"/>
+                                <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"/>
+                              </svg>
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Subscribe -->
+
+
+<!-- Main Footer -->
+    <footer class="main-footer text-bg-dark py-5 small">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <div class="brand-icon mb-2">
+                        <img src="img/brand-removebg-preview.png" alt="">
+                    </div>
+                    <address class="small text-secondary">
+                        Silki Woody Residence, Jalan Lingkar Barat, <br>
+                        Alam Sutera, Kota Tangerang, Banten, <br>
+                        15241
+                    </address>
+                    <p class="small text-secondary">
+                        contact&commat;genshin.hoyoverse.com
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="mt-lg-4 mt-0 pt-lg-2 pt-0">Main Menu</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="mt-lg-4 mt-0 pt-lg-2 pt-0">Misc</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Link Item</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <h6>Follow us</h6>
+                    <p>
+                        <a href="#" class="btn btn-sm btn-primary rounded-pill px-md-3 d-inline-flex align-items-center mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook me-md-2" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                            <span class="d-md-block d-none">Facebook</span>
+                        </a>
+                        <a href="#" class="btn btn-sm btn-info rounded-pill px-md-3 d-inline-flex align-items-center mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter me-md-2" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+                            <span class="d-md-block d-none">Twitter</span>
+                        </a>
+                        <a href="#" class="btn btn-sm btn-danger rounded-pill px-md-3 d-inline-flex align-items-center mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube me-md-2" viewBox="0 0 16 16">
+                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                              </svg>
+                            <span class="d-md-block d-none">Youtube</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- Main Footer -->
+
+
+<!-- Copyright -->
+<div class="copy py-4 small" style="background-color: black;">
+    <div class="container">
+        <div class="row justify-content-center text-center text-white">
+            <p class="m-0 small">Copyright &copy; Muheye 2023, All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+<!-- Copyright -->
+
+
+<!-- Mobile Padding -->
+<div class="mobile-padding pt-5 pb-4 d-md-none" style="background-color: black;"></div>
+<!-- Mobile Padding -->
+
+
+<!-- Sticky Footer -->
+<div class="d-md-none d-block d-flex p-3 fixed-bottom justify-content-center blur-filter shadow-lg">
+    <a href="#" class="rounded btn btn-sm btn-warning small px-3 fw-bold d-inline-flex align-items-center">
+        <img class="small-img me-2" src="img/muehe1.jpg" alt="">
+        Sign-up now
+    </a>
+</div>
+<!-- Sticky Footer -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+</body>
+</html>
+
